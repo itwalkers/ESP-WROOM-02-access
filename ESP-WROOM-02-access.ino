@@ -52,6 +52,13 @@ void loop()
 
   client.print(String("GET ") + url + " HTTP/1.1\r\n" +
                "Host: " + HOST + "\r\n" +
+               "Connection: xxxxx\r\n" + 
+               "Cache-Control: xxxxx\r\n" + 
+               "Accept: xxxxx\r\n" + 
+               "Upgrade-Insecure-Requests: xxxxx\r\n" +
+               "User-Agent: xxxxx\r\n" +
+               "Accept-Encoding: xxxxx\r\n" +
+               "Accept-Language: xxxxx\r\n" +
                "Connection: close\r\n\r\n");
   delay(2000);
 
