@@ -53,7 +53,7 @@ void loop()
   client.print(String("GET ") + url + " HTTP/1.1\r\n" +
                "Host: " + HOST + "\r\n" +
                "Connection: close\r\n\r\n");
-  delay(10);
+  delay(2000);
 
   while(client.available()){
     String line = client.readStringUntil('\r');
